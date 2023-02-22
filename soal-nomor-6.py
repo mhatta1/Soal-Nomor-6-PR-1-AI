@@ -3,10 +3,12 @@
 ##NPM: 2006470685
 ##Soal Nomor 6
 
+#mengimpor library python yang digunakan, yaitu matplotlib dan numpy
+
 import matplotlib.pyplot as plt
 import numpy as np
 
-# Mendefinisikan range nilai x yang digunakan
+# Mendefinisikan range nilai x yang digunakan (-50,50) dan menentukan banyakknya angka yang digunakan (1000)
 
 x = np.linspace(-50, 50, 1000)
 
@@ -15,8 +17,7 @@ a = 3*x+4
 b = 2 * x ** 2 + 1
 c = x ** 3 + 3
 
-# Membuat plot grafik fungsi yang diberikan dari soal 
-
+# Membuat plot grafik fungsi yang diberikan dari soal dan memberikannya judul 
 plt.plot(x, a, label=' Grafik Fungsi y = 3x + 4')
 plt.plot(x, b, label='Grafik Fungsi y = 2x\u00B2 + 1')
 plt.plot(x, c, label='Grafik Fungsi y = x\u00B3 + 3')
