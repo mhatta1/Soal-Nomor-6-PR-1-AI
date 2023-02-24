@@ -8,9 +8,12 @@
 import matplotlib.pyplot as plt
 import numpy as np
 
-# Mendefinisikan range nilai x yang digunakan (-50,50) dan menentukan banyakknya angka yang digunakan (1000)
+# Mendefinisikan range nilai x yang ingin dimasukkan oleh pengguna
+x1=input('Masukkan nilai x minimum: ')
+x2=input('Masukkan nilai x maksimum: ')
+x3=input('Masukkan jumlah titik yang diinginkan: ')
 
-x = np.linspace(-50, 50, 1000)
+x = np.linspace(int(x1),int(x2), int(x3))
 
 # Mendefinisikan fungsi yang diberikan oleh soal sebagai variabel a, b, c
 a = 3*x+4
@@ -28,10 +31,6 @@ plt.xlabel('Nilai x')
 plt.ylabel('Nilai y')
 plt.legend()
 plt.grid()
-
-# Mengatur skala sumbu x dan sumbu y
-plt.xlim(-20, 20)
-plt.ylim(-100, 100)
 
 # Menampilkan grafik hasil plotting
 plt.show()
